@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Library</h1>
+        <div class="library">
+            <div class="content">
+                <h3 class="title">The Road</h3>
+                <h5 class="author">John Doe</h5>
+                <div class="content-info">
+                    <p>pages 60</p>
+                    <label for="toggleRead"> Read:</label>
+                    <input type="checkbox" class="toggleRead">
+                </div>
+            </div>
+        </div>
+        <div class="newbook">
+            <dialog id="favbook" >
+                <form  class="book-info">
+                    <label for="Book"> Title</label>
+                    <input type="text" id="title" placeholder="Title Name">
+                    <label for="author">First & Last name</label>
+                    <input type="text" id="author" placeholder="Author name">
+                    <label for="pages"> How many pages did you read? </label>
+                    <input type="text" id="pages" placeholder="pages 0...">
+                    <label for="read"> Read:</label>
+                    <input type="checkbox" name="read" id="read">
+                    <div>
+                        <button class="cancel" formmethod="dialog"> Cancel</button>
+                        <button id="confirmBtn" value="default">Confirm</button>
+                    </div>
+                </form>
+            </dialog>
+            <button class="add">Add Book</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
